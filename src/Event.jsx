@@ -6,7 +6,7 @@ const Event = () => {
   const [bg, setBg] = useState(purple);
   const [name, setName] = useState("Click Me");
   const bgChange = () => {
-    // console.log("clicked");
+    console.log("clicked");
     let newBg = "#34495e";
     let newName = "tarun";
     setBg(newBg);
@@ -21,7 +21,8 @@ const Event = () => {
   return (
     <>
       <div style={{ backgroundColor: bg }}>
-        <button onMouseEnter={bgChange} onMouseLeave={bgBack}>
+        {/* <button onMouseEnter={bgChange} onMouseLeave={bgBack}> */}
+        <button onClick={bgChange} onDoubleClick={bgBack}>
           {name}
         </button>
       </div>
